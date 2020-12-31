@@ -3,7 +3,9 @@ import MonsterController from './controllers/MonsterController'
 
 const routes = Router()
 
-routes.post('/monster/create', MonsterController.createMonster)
+// mudei o path pra fingir q sei usar rest
+routes.put('/monster', MonsterController.createMonster)
 routes.get('/monster/:id', MonsterController.getMonster)
+routes.get('/monster', MonsterController.getMonsters)
 
 export default routes
