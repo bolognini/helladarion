@@ -11,7 +11,11 @@ const fireBase = admin.initializeApp({
   databaseURL: "https://t20-monster-builder-default-rtdb.firebaseio.com"
 })
 
-export const saveMonster = (monster: any, id: string) => {
+export const createMonster = (monster: any, id: string) => {
+  return fireBase.database().ref('monsters/' + id).set(monster)
+}
+
+export const updateMonster = (monster: any, id: string) => {
   return fireBase.database().ref('monsters/' + id).set(monster)
 }
 
