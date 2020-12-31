@@ -2,7 +2,7 @@ import express from 'express'
 import routes from './routes'
 import cors from 'cors'
 import * as admin from "firebase-admin"
-import serviceAccount from './serviceAccountKey.json'
+import serviceAccount from '../../serviceAccountKey.json'
 
 const app = express()
 
