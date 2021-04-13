@@ -23,6 +23,8 @@ export default {
       defense: req.body.defense,
       distance: req.body.distance,
       healthpoints: req.body.healthpoints,
+      treasury: req.body.treasury,
+      notes: req.body.notes,
       attributes: {
         FOR: {
           value: req.body.attributes['FOR'].value,
@@ -65,7 +67,7 @@ export default {
           bonus: string
           damage: string
           critic: string
-          type: string
+          attType: string
           range: string
           test: string
         }) => {
@@ -74,7 +76,7 @@ export default {
             bonus: attack.bonus,
             damage: attack.damage,
             critic: attack.critic,
-            type: attack.type,
+            attType: attack.attType,
             range: attack.range,
             test: attack.test,
           }
@@ -94,6 +96,8 @@ export default {
       defense: req.body.defense,
       distance: req.body.distance,
       healthpoints: req.body.healthpoints,
+      treasury: req.body.treasury,
+      notes: req.body.notes,
       attributes: {
         FOR: {
           value: req.body.attributes['FOR'].value,
@@ -136,7 +140,7 @@ export default {
           bonus: string
           damage: string
           critic: string
-          type: string
+          attType: string
           range: string
           test: string
         }) => {
@@ -145,7 +149,7 @@ export default {
             bonus: attack.bonus,
             damage: attack.damage,
             critic: attack.critic,
-            type: attack.type,
+            attType: attack.attType,
             range: attack.range,
             test: attack.test,
           }
