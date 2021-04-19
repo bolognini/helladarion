@@ -4,14 +4,18 @@ import { Request, Response } from 'express'
 export default {
   async get(req: Request, res: Response) {
     getMonster(req.params.id).then((monster) => {
-      res.status(200).json({
-        monster: {
-          id: req.params.id,
-          name: monster.val().name,
-          description: monster.val().description,
-          ...monster.val(),
-        },
-      })
+      if (monster.val()) {
+        res.status(200).json({
+          monster: {
+            id: req.params.id,
+            name: monster.val().name,
+            description: monster.val().description,
+            ...monster.val(),
+          },
+        })
+      } else {
+        res.status(204).json({ message: 'Monster not found!' })
+      }
     })
   },
 
