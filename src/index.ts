@@ -39,7 +39,7 @@ export const getMonster = (id: string) => {
 }
 
 app.use(express.json())
-app.use(cors({ origin: '*' }))
+app.use(cors({ origin: ['https://helladarion-codex.netlify.app/', 'https://helladarion-form.netlify.app/'] }))
 app.use(routes)
 
 app.listen(process.env.PORT || 3333)
