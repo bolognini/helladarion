@@ -39,4 +39,4 @@ app.use(express.json())
 app.use(cors({ origin: ['https://helladarion-codex.netlify.app/', 'https://helladarion-form.netlify.app/'] }))
 app.use(routes)
 
-app.listen(3333)
+app.listen(process.env.PORT || 3333)
