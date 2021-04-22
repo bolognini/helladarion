@@ -1,6 +1,7 @@
 # dependencies
 node_modules
 dist
+.env
 
 # misc
 .DS_Store
