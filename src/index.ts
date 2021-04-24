@@ -39,7 +39,7 @@ export const getMonster = (id: string) => {
 }
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({ origin: '*' }))
 app.use(routes)
 
 app.listen(process.env.PORT || 3333)
