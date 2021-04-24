@@ -8,11 +8,23 @@ import { ServiceAccount } from "firebase-admin";
 dotenv.config()
 const app = express()
 
+app.use(express.json({ limit: '25mb' }))
+
+app.use(express.json())
+app.use(cors({
+  origin: '*',
+  allowedHeaders: 'X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept,Authorization',
+  methods: ['GET', 'PUT', 'POST']
+}))
+app.use(routes)
+
+const privateKey: string = process.env.FIREBASE_PRIVATE_KEY as string
+
 const adminConfig = {
   "type": process.env.FIREBASE_TYPE,
   "project_id": process.env.FIREBASE_PROJECT_ID,
   "private_key_id": process.env.FIREBASE_PRIVATE_KEY_ID,
-  "private_key": process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+  "private_key": privateKey.replace(/\\n/g, '\n'),
   "client_email": process.env.FIREBASE_CLIENT_EMAIL,
   "client_id": process.env.FIREBASE_CLIENT_ID,
   "auth_uri": process.env.FIREBASE_AUTH_URI,
@@ -37,9 +49,5 @@ export const updateMonster = (monster: any, id: string) => {
 export const getMonster = (id: string) => {
   return fireBase.database().ref('monsters/' + id).once("value")
 }
-
-app.use(express.json())
-app.use(cors({ origin: '*' }))
-app.use(routes)
 
 app.listen(process.env.PORT || 3333)
