@@ -31,6 +31,7 @@ export default {
       healthpoints: data.healthpoints,
       treasury: data.treasury,
       notes: data.notes,
+      mugshot: data.mugshot,
       attributes: data.attributes.map((attr: { attributeName: string; value: string; modificator: string }) => {
         return { name: attr.attributeName, value: attr.value, modificator: attr.modificator }
       }),
@@ -84,6 +85,7 @@ export default {
       healthpoints: data.healthpoints,
       treasury: data.treasury,
       notes: data.notes,
+      mugshot: data.mugshot,
       attributes: data.attributes.map((attr: { attributeName: string; value: string; modificator: string }) => {
         return { name: attr.attributeName, value: attr.value, modificator: attr.modificator }
       }),
