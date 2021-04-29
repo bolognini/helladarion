@@ -32,8 +32,8 @@ export default {
       treasury: data.treasury,
       notes: data.notes,
       mugshot: data.mugshot,
-      attributes: data.attributes.map((attr: { attributeName: string; value: string; modificator: string }) => {
-        return { name: attr.attributeName, value: attr.value, modificator: attr.modificator }
+      attributes: data.attributes.map((attr: { name: string; value: string; modificator: string }) => {
+        return { name: attr.name, value: attr.value, modificator: attr.modificator }
       }),
       senses: data.senses.map(
         (sense: { name: string; rolling: string }) => {
@@ -86,8 +86,8 @@ export default {
       treasury: data.treasury,
       notes: data.notes,
       mugshot: data.mugshot,
-      attributes: data.attributes.map((attr: { attributeName: string; value: string; modificator: string }) => {
-        return { name: attr.attributeName, value: attr.value, modificator: attr.modificator }
+      attributes: data.attributes.map((attr: { name: string; value: string; modificator: string }) => {
+        return { name: attr.name, value: attr.value, modificator: attr.modificator }
       }),
       senses: data.senses.map(
         (sense: { name: string; rolling: string }) => {
