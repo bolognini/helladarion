@@ -46,9 +46,9 @@ export default {
           return { name: sense.name, rolling: sense.rolling }
         }
       ),
-      resistances: data.resistances.map(
-        (resistance: { name: string; rolling: string }) => {
-          return { name: resistance.name, rolling: resistance.rolling }
+      skills: data.skills.map(
+        (skill: { name: string; rolling: string }) => {
+          return { name: skill.name, rolling: skill.rolling }
         }
       ),
       attacks: data.attacks.map(
@@ -106,9 +106,9 @@ export default {
           return { name: sense.name, rolling: sense.rolling }
         }
       ),
-      resistances: data.resistances.map(
-        (resistance: { name: string; rolling: string }) => {
-          return { name: resistance.name, rolling: resistance.rolling }
+      skills: data.skills.map(
+        (skill: { name: string; rolling: string }) => {
+          return { name: skill.name, rolling: skill.rolling }
         }
       ),
       attacks: data.attacks.map(
