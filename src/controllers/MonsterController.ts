@@ -54,8 +54,10 @@ export default {
       attacks: data.attacks.map(
         (attack: {
           attackName: string
-          bonus: string
+          action: string
+          manaCost: string
           damage: string
+          bonus: string
           critic: string
           attType: string
           range: string
@@ -63,8 +65,10 @@ export default {
         }) => {
           return {
             attackName: attack.attackName,
-            bonus: attack.bonus,
+            action: attack.action,
+            manaCost: attack.manaCost,
             damage: attack.damage,
+            bonus: attack.bonus,
             critic: attack.critic,
             attType: attack.attType,
             range: attack.range,
@@ -114,8 +118,10 @@ export default {
       attacks: data.attacks.map(
         (attack: {
           attackName: string
-          bonus: string
+          action: string
+          manaCost: string
           damage: string
+          bonus: string
           critic: string
           attType: string
           range: string
@@ -123,8 +129,10 @@ export default {
         }) => {
           return {
             attackName: attack.attackName,
-            bonus: attack.bonus,
+            action: attack.action,
+            manaCost: attack.manaCost,
             damage: attack.damage,
+            bonus: attack.bonus,
             critic: attack.critic,
             attType: attack.attType,
             range: attack.range,
