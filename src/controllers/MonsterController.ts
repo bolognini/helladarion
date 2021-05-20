@@ -25,7 +25,10 @@ export default {
     const monster = {
       name: data.name,
       description: data.description,
+      monsterType: data.monsterType,
+      size: data.size,
       level: data.level,
+      challengeLevel: data.challengeLevel,
       defense: data.defense,
       distance: data.distance,
       healthpoints: data.healthpoints,
@@ -82,7 +85,10 @@ export default {
     const monster = {
       name: data.name,
       description: data.description,
+      monsterType: data.monsterType,
+      size: data.size,
       level: data.level,
+      challengeLevel: data.challengeLevel,
       defense: data.defense,
       distance: data.distance,
       healthpoints: data.healthpoints,
