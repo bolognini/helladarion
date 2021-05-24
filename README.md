@@ -25,8 +25,8 @@ This project is a Typescript and Node.js study. It serve both the projects: [Hel
 
 Helladarion has just three endpoints to receive data and create a new entry on the database.
 
-**GET** - `/monster/:id`
-**POST** - `/monster/create`
+**GET** - `/monster/:id` <br/>
+**POST** - `/monster/create` <br/>
 **PUT** - `/monster/update`
 
 ### Installing
