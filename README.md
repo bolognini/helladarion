@@ -1,7 +1,7 @@
 # Helladarion 🔮
 
 <p align="center"><img src="icon.png" alt="T20 Bestiary Logo" width="60"></p>
-<p align="center">&laquo;<b>A API to collect and send data to build a monster sheet for Tormenta20 RPG system.</b>&raquo;</p>
+<p align="center">&laquo;<b>A BFF API to help building an enemy sheet for Tormenta20 RPG system.</b>&raquo;</p>
 <p align="center">Helladarion is a Backend for Frontend API that get and send data to a form and a virtual sheet for Tormenta20 RPG System with the help of a Firebase database</p>
 <br />
 <br />
