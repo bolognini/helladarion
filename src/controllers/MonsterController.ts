@@ -64,15 +64,15 @@ export default {
           test: string
         }) => {
           return {
-            attackName: attack.attackName,
-            action: attack.action,
-            manaCost: attack.manaCost,
-            damage: attack.damage,
-            bonus: attack.bonus,
-            critic: attack.critic,
-            attType: attack.attType,
-            range: attack.range,
-            test: attack.test,
+            attackName: attack.attackName || '-',
+            action: attack.action || '-',
+            manaCost: attack.manaCost || '-',
+            damage: attack.damage || '-',
+            bonus: attack.bonus || '-',
+            critic: attack.critic || '-',
+            attType: attack.attType || '-',
+            range: attack.range || '-',
+            test: attack.test || '-',
           }
         }
       ),
